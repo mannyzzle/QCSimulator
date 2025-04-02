@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4151F56F-B1CD-3B95-858C-4201EBC1A8E8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>qcsim</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Work\Blog\QCSim\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qcsim.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qcsim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Work\Blog\QCSim\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qcsim.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qcsim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Work\Blog\QCSim\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">qcsim.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">qcsim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Work\Blog\QCSim\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">qcsim.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">qcsim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\LIBs\fftw-3.3.5-dll64;C:\LIBs\eigen;$(IncludePath)</IncludePath>
+    <ExecutablePath>C:\LIBs\fftw-3.3.5-dll64;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath>C:\LIBs\fftw-3.3.5-dll64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\LIBs\fftw-3.3.5-dll64;C:\LIBs\eigen;$(IncludePath)</IncludePath>
+    <ExecutablePath>C:\LIBs\fftw-3.3.5-dll64;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath>C:\LIBs\fftw-3.3.5-dll64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libfftw3-3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Work/Blog/QCSim/bin/Debug/qcsim.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Work/Blog/QCSim/bin/Debug/qcsim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ConformanceMode>true</ConformanceMode>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libfftw3-3.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDataBaseFile>C:/Work/Blog/QCSim/bin/Release/qcsim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Work/Blog/QCSim/bin/MinSizeRel/qcsim.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Work/Blog/QCSim/bin/MinSizeRel/qcsim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Blog\QCSim\QCSim;C:\LIBs\eigen\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Work/Blog/QCSim/bin/RelWithDebInfo/qcsim.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Work/Blog/QCSim/bin/RelWithDebInfo/qcsim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\QCSim.cpp" />
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\Tests.cpp" />
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\AdderTests.cpp" />
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\ErrorCorrectionTests.cpp" />
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\FFT.cpp" />
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\GatesTests.cpp" />
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\MeasurementsTests.cpp" />
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\ParadoxesTests.cpp" />
+    <ClCompile Include="C:\Work\Blog\QCSim\QCSim\SimulationTests.cpp" />
+    <ClCompile Include="QCSim\CliffordTests.cpp" />
+    <ClCompile Include="QCSim\DeutschJozsaTests.cpp" />
+    <ClCompile Include="QCSim\DistributedTests.cpp" />
+    <ClCompile Include="QCSim\GamesTests.cpp" />
+    <ClCompile Include="QCSim\IsingTests.cpp" />
+    <ClCompile Include="QCSim\MPSSimulatorTests.cpp" />
+    <ClCompile Include="QCSim\PhaseEstimationTests.cpp" />
+    <ClCompile Include="QCSim\QMLTests.cpp" />
+    <ClCompile Include="QCSim\TeleportationTests.cpp" />
+    <ClCompile Include="QCSim\VQETests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QCSim\BernsteinVazirani.h" />
+    <ClInclude Include="QCSim\CatDisentangler.h" />
+    <ClInclude Include="QCSim\CatEntangler.h" />
+    <ClInclude Include="QCSim\CheckCHSHInequality.h" />
+    <ClInclude Include="QCSim\Clifford.h" />
+    <ClInclude Include="QCSim\CoinFlipping.h" />
+    <ClInclude Include="QCSim\DeutschJozsa.h" />
+    <ClInclude Include="QCSim\DistributedCNOT.h" />
+    <ClInclude Include="QCSim\DraperAdder.h" />
+    <ClInclude Include="QCSim\EntanglementSwapping.h" />
+    <ClInclude Include="QCSim\ErrorCorrection3Qubits.h" />
+    <ClInclude Include="QCSim\ErrorCorrectionBase.h" />
+    <ClInclude Include="QCSim\FFT.h" />
+    <ClInclude Include="QCSim\Function.h" />
+    <ClInclude Include="QCSim\GeneralElitzurVaidmanBomb.h" />
+    <ClInclude Include="QCSim\GeneralizedEntanglingGate.h" />
+    <ClInclude Include="QCSim\Generator.h" />
+    <ClInclude Include="QCSim\GroverAlgorithm.h" />
+    <ClInclude Include="QCSim\HadamardTransform.h" />
+    <ClInclude Include="QCSim\HardyParadox.h" />
+    <ClInclude Include="QCSim\IsingModel.h" />
+    <ClInclude Include="QCSim\MagicSquare.h" />
+    <ClInclude Include="QCSim\MPSSimulator.h" />
+    <ClInclude Include="QCSim\MPSSimulatorBase.h" />
+    <ClInclude Include="QCSim\MPSSimulatorImpl.h" />
+    <ClInclude Include="QCSim\MPSSimulatorInterface.h" />
+    <ClInclude Include="QCSim\NControlledGateWithAncilla.h" />
+    <ClInclude Include="QCSim\NControlledNotWithAncilla.h" />
+    <ClInclude Include="QCSim\NQubitsControlledQuantumGate.h" />
+    <ClInclude Include="QCSim\NQubitsQuantumGate.h" />
+    <ClInclude Include="QCSim\Operators.h" />
+    <ClInclude Include="QCSim\Oracle.h" />
+    <ClInclude Include="QCSim\PauliString.h" />
+    <ClInclude Include="QCSim\PauliStringSimulation.h" />
+    <ClInclude Include="QCSim\PhaseEstimation.h" />
+    <ClInclude Include="QCSim\QMeansClustering2D.h" />
+    <ClInclude Include="QCSim\QuantumAdder.h" />
+    <ClInclude Include="QCSim\QuantumAlgorithm.h" />
+    <ClInclude Include="QCSim\QuantumCountingAlgorithm.h" />
+    <ClInclude Include="QCSim\QuantumCryptograpy.h" />
+    <ClInclude Include="QCSim\QuantumEraser.h" />
+    <ClInclude Include="QCSim\QuantumFourierTransform.h" />
+    <ClInclude Include="QCSim\QuantumGate.h" />
+    <ClInclude Include="QCSim\QubitRegister.h" />
+    <ClInclude Include="QCSim\QubitRegisterCalculator.h" />
+    <ClInclude Include="QCSim\QubitRegisterDebug.h" />
+    <ClInclude Include="QCSim\QubitsSwapper.h" />
+    <ClInclude Include="QCSim\Schrodinger.h" />
+    <ClInclude Include="QCSim\ShorAlgorithm.h" />
+    <ClInclude Include="QCSim\ShorCode.h" />
+    <ClInclude Include="QCSim\SimonAlgorithm.h" />
+    <ClInclude Include="QCSim\SimpleGates.h" />
+    <ClInclude Include="QCSim\StabilizerState.h" />
+    <ClInclude Include="QCSim\SuperdenseCoding.h" />
+    <ClInclude Include="QCSim\Teleportation.h" />
+    <ClInclude Include="QCSim\TeleportedCNOT.h" />
+    <ClInclude Include="QCSim\Tests.h" />
+    <ClInclude Include="QCSim\Utils.h" />
+    <ClInclude Include="QCSim\VQE.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

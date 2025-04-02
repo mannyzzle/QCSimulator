@@ -1,0 +1,3 @@
+/Users/mannyzzle/Desktop/Projects/QCSimulator/build/CMakeFiles/QCSim.dir
+/Users/mannyzzle/Desktop/Projects/QCSimulator/build/CMakeFiles/edit_cache.dir
+/Users/mannyzzle/Desktop/Projects/QCSimulator/build/CMakeFiles/rebuild_cache.dir
