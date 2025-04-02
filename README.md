@@ -109,14 +109,10 @@ Both simulators may see performance improvements with future multithreading supp
 ⸻
 
 ## Code Structure Overview
-	•	QuantumGate.h (Namespace: QC::Gates):
-Implements the quantum gates. Note that while the getOperatorMatrix function is retained for legacy reasons, it is now obsolete for 1-, 2-, and 3-qubit gates thanks to optimization techniques.
-	•	QubitRegister.h:
-Manages the qubit register and includes complex operations such as partial-register measurement. The implementation of ApplyGate has evolved to remove the need for large tensor product operator matrices.
-	•	QuantumAlgorithm.h:
-A lightweight proxy that facilitates interaction with the qubit register.
-	•	Utils.h:
-Provides common utilities, including definitions for Bell states and measurement bases used across multiple algorithms.
+	•	QuantumGate.h (Namespace: QC::Gates): Implements the quantum gates. Note that while the getOperatorMatrix function is retained for legacy reasons, it is now obsolete for 1-, 2-, and 3-qubit gates thanks to optimization techniques.
+	•	QubitRegister.h: Manages the qubit register and includes complex operations such as partial-register measurement. The implementation of ApplyGate has evolved to remove the need for large tensor product operator matrices.
+	•	QuantumAlgorithm.h: A lightweight proxy that facilitates interaction with the qubit register.
+	•	Utils.h: Provides common utilities, including definitions for Bell states and measurement bases used across multiple algorithms.
 
 For more advanced operations, refer to:
 	•	NQubitsQuantumGate and NQubitsControlledQuantumGate for full matrix-based implementations.
@@ -127,10 +123,8 @@ To explore the algorithms in action, check out the test files in the Test direct
 ⸻
 
 ## Dependencies
-	•	Eigen:
-Utilized for efficient matrix and vector operations.
-	•	FFTW:
-Used for verifying the Quantum Fourier Transform in simulations of the Schrödinger equation. Alternative methods for solving the equation are available within the code and may be adapted in future updates.
+	•	Eigen: Utilized for efficient matrix and vector operations.
+	•	FFTW: Used for verifying the Quantum Fourier Transform in simulations of the Schrödinger equation. Alternative methods for solving the equation are available within the code and may be adapted in future updates.
 
 ⸻
 
