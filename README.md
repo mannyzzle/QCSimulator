@@ -99,10 +99,8 @@ This example uses the statevector simulator, which is the default for most demon
 ⸻
 
 ## Simulator Implementations
-	•	Matrix Product State Simulator:
-Implements a basic 1D tensor network (akin to a TEBD approach) for simulating qubits on a chain. Early tests are promising, though further enhancements are planned.
-	•	Clifford Gates Simulator:
-Executes Clifford circuits via the stabilizer formalism. Currently, only basic functionality is verified through tests.
+	•	Matrix Product State Simulator: Implements a basic 1D tensor network (akin to a TEBD approach) for simulating qubits on a chain. Early tests are promising, though further enhancements are planned.
+	•	Clifford Gates Simulator: Executes Clifford circuits via the stabilizer formalism. Currently, only basic functionality is verified through tests.
 
 Both simulators may see performance improvements with future multithreading support.
 
